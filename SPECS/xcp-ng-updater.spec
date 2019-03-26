@@ -1,7 +1,7 @@
 Summary: XAPI plugin for updating through yum
 Name: xcp-ng-updater
 Version: 1.1.0
-Release: 3
+Release: 3%{dist}
 URL: https://github.com/xcp-ng/xcp-ng-updater
 Source0: https://github.com/xcp-ng/xcp-ng-updater/archive/v%{version}/%{name}-%{version}.tar.gz
 License: AGPLv3
