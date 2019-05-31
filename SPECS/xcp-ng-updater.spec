@@ -1,6 +1,6 @@
 Summary: XAPI plugin for updating through yum
 Name: xcp-ng-updater
-Version: 1.2.0
+Version: 1.3.0
 Release: 1%{?dist}
 URL: https://github.com/xcp-ng/xcp-ng-updater
 Source0: https://github.com/xcp-ng/xcp-ng-updater/archive/v%{version}/%{name}-%{version}.tar.gz
@@ -18,10 +18,13 @@ A XAPI plugin that allows to interact with the underlying package manager.
 install -D SOURCES/etc/xapi.d/plugins/updater.py %{buildroot}/etc/xapi.d/plugins/updater.py
 
 %files
-%doc LICENSE README.md test_plugin.sh
+%doc LICENSE README.md test_updater.sh
 /etc/xapi.d/plugins/*
 
 %changelog
+* Fri May 31 2019 Samuel Verschelde <stormi-xcp@ylix.fr> - 1.3.0-1
+- New version 1.3.0 with added zfs discovery plugin
+
 * Thu May 02 2019 Samuel Verschelde <stormi-xcp@ylix.fr> - 1.2.0-1
 - New version 1.2.0 with proxy configuration support
 
